@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEC EDGAR Insider Digest</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #f0f0f0; }
+    .hero { max-width: 680px; margin: 0 auto; padding: 80px 24px 60px; text-align: center; }
+    .eyebrow { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: #888; margin-bottom: 20px; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+    h1 span { color: #7fff6e; }
+    .sub { font-size: 1.15rem; color: #aaa; line-height: 1.6; margin-bottom: 40px; }
+    .cta-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+    .cta { display: inline-block; background: #7fff6e; color: #0f0f0f; font-weight: 700; font-size: 1rem;
+           padding: 14px 32px; border-radius: 8px; text-decoration: none; transition: opacity .15s; }
+    .cta:hover { opacity: .85; }
+    .price-note { font-size: .85rem; color: #666; }
+    .proof { max-width: 680px; margin: 0 auto; padding: 0 24px 60px; }
+    .proof h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 24px; text-align: center; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 20px; }
+    .card .icon { font-size: 1.5rem; margin-bottom: 10px; }
+    .card h3 { font-size: .95rem; font-weight: 600; margin-bottom: 6px; }
+    .card p { font-size: .85rem; color: #888; line-height: 1.5; }
+    .contact { max-width: 480px; margin: 0 auto; padding: 0 24px 80px; }
+    .contact h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; text-align: center; }
+    form { display: flex; flex-direction: column; gap: 12px; }
+    input, textarea { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 8px;
+                      color: #f0f0f0; font-size: .95rem; padding: 12px 14px; width: 100%; }
+    input:focus, textarea:focus { outline: 2px solid #7fff6e; border-color: transparent; }
+    textarea { resize: vertical; min-height: 90px; }
+    button[type=submit] { background: #7fff6e; color: #0f0f0f; font-weight: 700; font-size: 1rem;
+                          padding: 13px; border: none; border-radius: 8px; cursor: pointer; }
+    footer { text-align: center; padding: 24px; font-size: .8rem; color: #444; }
+    @media (max-width: 480px) { .hero { padding: 60px 20px 40px; } }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <p class="eyebrow">SEC EDGAR &middot; Form 4 &middot; Every Week</p>
+  <h1>Know What Insiders Are Buying <span>Before</span> The Crowd</h1>
+  <p class="sub">Weekly digest of cluster insider purchases from SEC EDGAR. No noise. No paywalled terminals. $9/mo.</p>
+  <div class="cta-wrap">
+    <a href="https://gum.co/EDGAR_DIGEST_PLACEHOLDER" class="cta">Get This Week's Digest Free &rarr;</a>
+    <span class="price-note">Free preview &middot; $9/mo for full 20-pick list</span>
+  </div>
+</section>
+
+<section class="proof">
+  <h2>Why This Digest Is Different</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">&#128209;</div>
+      <h3>100% Public Data</h3>
+      <p>Every pick sourced directly from SEC EDGAR Form 4 filings. No scraped paywalls. No synthetic signals. All verifiable.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#128202;</div>
+      <h3>Cluster-Only Filter</h3>
+      <p>We only surface tickers where 3 or more insiders bought in the same 7-day window. One insider buying is noise. Three is a signal.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#128221;</div>
+      <h3>Plain English</h3>
+      <p>No SEC legalese. Each pick shows who bought, how much, and what role they hold — so you can decide in 30 seconds if it's worth a deeper look.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Questions? Drop a note.</h2>
+  <form action="https://formspree.io/f/FORMSPREE_ID_PLACEHOLDER" method="POST">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Email address" required>
+    <textarea name="message" placeholder="What do you want to know about insider cluster buys?"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2026 SEC EDGAR Insider Digest &mdash;
+  <a href="mailto:kobeneilson@gmail.com" style="color:#666;">kobeneilson@gmail.com</a>
+  &mdash; Canada
+</footer>
+
+</body>
+</html>
